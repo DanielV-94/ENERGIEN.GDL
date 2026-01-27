@@ -440,6 +440,18 @@ body {
   opacity: 0.8;
 }
 
+@media (max-width: 1024px) {
+  .contact-hero {
+    padding: 100px 40px 60px;
+  }
+  .contact-hero__wrapper {
+    gap: 60px;
+  }
+  .contact-info-container {
+    padding: 0 40px;
+  }
+}
+
 @media (max-width: 968px) {
   .contact-hero {
     padding: 120px 32px 60px;
@@ -470,6 +482,12 @@ body {
     flex-direction: column;
     text-align: center;
   }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 110px 28px 55px;
+  }
   .social-visual-container {
     height: 550px;
     max-width: 550px;
@@ -482,35 +500,10 @@ body {
     width: 100px;
     height: 100px;
   }
-  @keyframes orbitFacebook {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg) translateX(220px)
-        rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg) translateX(220px)
-        rotate(-360deg);
-    }
-  }
-  @keyframes orbitInstagram {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg) translateX(220px)
-        rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg) translateX(220px)
-        rotate(-360deg);
-    }
-  }
-  @keyframes orbitWhatsapp {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg) translateX(220px)
-        rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg) translateX(220px)
-        rotate(-360deg);
-    }
+  .floating-social.facebook,
+  .floating-social.instagram,
+  .floating-social.whatsapp {
+    animation-duration: 15s;
   }
   .social-links {
     flex-direction: column;
@@ -591,36 +584,6 @@ body {
   .floating-social {
     width: 70px;
     height: 70px;
-  }
-  @keyframes orbitFacebook {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg) translateX(160px)
-        rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg) translateX(160px)
-        rotate(-360deg);
-    }
-  }
-  @keyframes orbitInstagram {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg) translateX(160px)
-        rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg) translateX(160px)
-        rotate(-360deg);
-    }
-  }
-  @keyframes orbitWhatsapp {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg) translateX(160px)
-        rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg) translateX(160px)
-        rotate(-360deg);
-    }
   }
   .contact-cta {
     padding: 60px 24px;
