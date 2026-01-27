@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Energien | Innovación solar con certeza</title>
+  <meta name="description"
+    content="Energien: proyectos solares residenciales, comerciales e industriales con precisión y confianza en México.">
+  <link rel="canonical" href="https://www.energien.com.mx/">
+  <meta name="theme-color" content="#111418">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Nunito:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main-min.css">
+  <link rel="stylesheet" href="styles/footer-min.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/MotionPathPlugin.min.js"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Energien | Innovación solar con certeza">
+  <meta property="og:description"
+    content="Especialistas en proyectos solares residenciales, comerciales e industriales en México.">
+  <meta property="og:url" content="https://www.energien.com.mx/">
+  <meta property="og:image" content="https://www.energien.com.mx/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Energien | Innovación solar con certeza">
+  <meta name="twitter:description" content="Proyectos solares con precisión, innovación y confianza.">
+  <meta name="twitter:image" content="https://www.energien.com.mx/logo.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Energien",
+      "url": "https://www.energien.com.mx/",
+      "logo": "https://www.energien.com.mx/logo.png",
+      "email": "direccion@energien.com.mx",
+      "telephone": "+52 333 201 5936",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Piramides del Sol #98",
+        "addressLocality": "Zapopan",
+        "addressRegion": "Jalisco",
+        "addressCountry": "MX",
+        "postalCode": "45077"
+      },
+      "sameAs": [
+        "https://www.energien.com.mx/"
+      ],
+      "description": "Proyectos solares residenciales, comerciales e industriales con precision e innovacion."
+    }
+  </script>
+</head>
+
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__beam"></div>
+    <div class="loader__glow"></div>
+    <div class="loader__label">Encendiendo innovación solar...</div>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.svg" alt="Energien" class="brand__logo">
+      <span class="brand__name">Energien</span>
+    </div>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="#hero">Inicio</a>
+      <a href="#servicios">Servicios solares</a>
+      <a href="financiamiento.html">Financiamiento</a>
+      <a href="contacto.html" class="nav-cta">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <canvas id="energy-canvas" aria-hidden="true"></canvas>
+      <img src="SVG/5_g11.svg" alt="" class="hero__float-svg" aria-hidden="true">
+      <div class="hero__content">
+        <div class="eyebrow">Proyectos solares residenciales · comerciales · industriales</div>
+        <h1 id="hero-title" class="hero__title" data-kinetic>
+          Innovación solar con certeza
+        </h1>
+        <p class="hero__lead">
+          Diseñamos e instalamos sistemas fotovoltaicos precisos y confiables, alineados a tus objetivos de ahorro y
+          sostenibilidad.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn-primary" href="#cta-contacto">Hablemos de tu proyecto solar</a>
+        </div>
+        <div class="hero__meta">
+          <div class="meta-item">
+            <span class="meta-label">Enfoque</span>
+            <span class="meta-value">Solar puro</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Sectores</span>
+            <span class="meta-value">Residencial · Comercial · Industrial</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story-section" aria-label="Nuestro proceso solar">
+      <div class="story-container">
+        <!-- SVG Path Container - Inline as background -->
+        <svg class="story-path-svg" viewBox="-60 -100 550 1800" preserveAspectRatio="xMidYMid meet"
+          xmlns="http://www.w3.org/2000/svg">
+          <path class="story-path" d="m 291.75,-30
+c 0,0 4.17,210 -70.1,175
+C -17.05,60 55.79,340 55.79,340
+c 0,0 63.72,75 215.56,190
+C 286.96,640 37.34,650 58.6,800
+c 155.03,65 190.65,220 143.88,270 -119.08,130 35.72,85 35.72,85 0,0 61.83,170 -72.17,145 -217.26,-40 -93,125 -95,239">
+        </svg>
+
+        <!-- Traveling Sun -->
+        <img src="SVG/sol.svg" alt="" class="traveling-sun" aria-hidden="true">
+
+        <!-- Stations -->
+        <div class="story-stations">
+          <!-- Station 1: Analysis -->
+          <section class="station station-1" data-station="0">
+            <div class="station__content">
+              <div class="station__number">01</div>
+              <h2 class="station__title">Análisis de necesidades</h2>
+              <p class="station__desc">
+                Evaluamos tu hogar o negocio para entender el consumo energético actual y diseñar la solución perfecta
+                adaptada a ti.
+              </p>
+              <ul class="station__features">
+                <li>Auditoría energética completa</li>
+                <li>Análisis de consumo histórico</li>
+                <li>Evaluación de espacio disponible</li>
+              </ul>
+            </div>
+            <div class="station__image">
+              <img src="IMAGENES/station1.png" alt="Análisis de necesidades" loading="lazy">
+            </div>
+          </section>
+
+          <!-- Station 2: Design -->
+          <section class="station station-2" data-station="1">
+            <div class="station__content">
+              <div class="station__number">02</div>
+              <h2 class="station__title">Diseño del proyecto</h2>
+              <p class="station__desc">
+                Creamos un diseño personalizado con los mejores equipos que cubren exactamente lo que necesitas,
+                maximizando eficiencia y ROI.
+              </p>
+              <ul class="station__features">
+                <li>Propuesta técnica detallada</li>
+                <li>Selección de paneles premium</li>
+                <li>Cálculo de generación anual</li>
+              </ul>
+            </div>
+            <div class="station__image">
+              <img src="IMAGENES/station2.png" alt="Diseño del proyecto" loading="lazy">
+            </div>
+          </section>
+
+          <!-- Station 3: Financing -->
+          <section class="station station-3" data-station="2">
+            <div class="station__content">
+              <div class="station__number">03</div>
+              <h2 class="station__title">Opciones de financiamiento</h2>
+              <p class="station__desc">
+                Ofrecemos múltiples opciones de crédito con FIDE, ECOCREDITO y más para que el proyecto sea accesible y
+                rentable.
+              </p>
+              <ul class="station__features">
+                <li>Créditos sin comisión de apertura</li>
+                <li>Pago directo en tu recibo de luz</li>
+                <li>Tasas preferenciales</li>
+              </ul>
+            </div>
+            <div class="station__image">
+              <img src="IMAGENES/station3.png" alt="Opciones de financiamiento" loading="lazy">
+            </div>
+          </section>
+
+          <!-- Station 4: Installation -->
+          <section class="station station-4" data-station="3">
+            <div class="station__content">
+              <div class="station__number">04</div>
+              <h2 class="station__title">Instalación profesional</h2>
+              <p class="station__desc">
+                Nuestro equipo certificado realiza la instalación con materiales de calidad y cumpliendo todas las
+                normas vigentes.
+              </p>
+              <ul class="station__features">
+                <li>Mano de obra calificada</li>
+                <li>Materiales certificados</li>
+                <li>Seguridad garantizada</li>
+              </ul>
+            </div>
+            <div class="station__image">
+              <img src="IMAGENES/station4.png" alt="Instalación profesional" loading="lazy">
+            </div>
+          </section>
+
+          <!-- Station 5: Training -->
+          <section class="station station-5" data-station="4">
+            <div class="station__content">
+              <div class="station__number">05</div>
+              <h2 class="station__title">Capacitación y puesta en marcha</h2>
+              <p class="station__desc">
+                Te enseñamos cómo funciona tu sistema y cómo maximizar el ahorro de energía desde el primer día.
+              </p>
+              <ul class="station__features">
+                <li>Entrenamiento del cliente</li>
+                <li>Manual de operación</li>
+                <li>Soporte técnico disponible</li>
+              </ul>
+            </div>
+            <div class="station__image">
+              <img src="IMAGENES/station5.png" alt="Capacitación y puesta en marcha" loading="lazy">
+            </div>
+          </section>
+
+          <!-- Station 6: Monitoring -->
+          <section class="station station-6" data-station="5">
+            <div class="station__content">
+              <div class="station__number">06</div>
+              <h2 class="station__title">Monitoreo y mantenimiento</h2>
+              <p class="station__desc">
+                Realizamos seguimiento continuo del sistema, garantizando rendimiento óptimo y máxima vida útil de los
+                equipos.
+              </p>
+              <ul class="station__features">
+                <li>Monitoreo remoto 24/7</li>
+                <li>Mantenimiento preventivo</li>
+                <li>Garantía extendida</li>
+              </ul>
+            </div>
+            <div class="station__image">
+              <img src="IMAGENES/station6.png" alt="Monitoreo y mantenimiento" loading="lazy">
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="services-section" aria-labelledby="services-title">
+      <div class="services-container">
+        <div class="services-header">
+          <h2 id="services-title" class="services-title">Soluciones solares para cada necesidad</h2>
+          <p class="services-subtitle">Sistemas fotovoltaicos personalizados según tu sector</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card Residencial -->
+          <a href="residencial.html" class="service-card">
+            <div class="service-card__icon">
+              <img src="SVG/g4.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="service-card__title">Residencial</h3>
+            <p class="service-card__desc">
+              Sistemas solares para tu hogar. Ahorra hasta 95% en tu recibo de luz.
+            </p>
+            <span class="service-card__cta">Ver proyectos →</span>
+          </a>
+
+          <!-- Card Comercial -->
+          <a href="comercial.html" class="service-card">
+            <div class="service-card__icon">
+              <img src="SVG/g6.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="service-card__title">Comercial</h3>
+            <p class="service-card__desc">
+              Soluciones para negocios y comercios. Reduce costos operativos significativamente.
+            </p>
+            <span class="service-card__cta">Ver proyectos →</span>
+          </a>
+
+          <!-- Card Industrial -->
+          <a href="industrial.html" class="service-card">
+            <div class="service-card__icon">
+              <img src="SVG/g8.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="service-card__title">Industrial</h3>
+            <p class="service-card__desc">
+              Instalaciones de gran escala. Máxima eficiencia energética para tu industria.
+            </p>
+            <span class="service-card__cta">Ver proyectos →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact/Quote Section -->
+    <section id="cta-contacto" class="contact-section" aria-label="Contacto">
+      <div class="contact-container">
+        <div class="contact-content">
+          <div class="contact-header">
+            <h2 class="contact-title">¿Listo para comenzar tu proyecto solar?</h2>
+            <p class="contact-lead">
+              Cotiza tu sistema fotovoltaico personalizado. Te respondemos en menos de 24 horas con una propuesta
+              adaptada a tus necesidades.
+            </p>
+          </div>
+
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" required placeholder="Juan Pérez">
+              </div>
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="juan@ejemplo.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+52 333 123 4567">
+              </div>
+              <div class="form-group">
+                <label for="sector">Sector</label>
+                <select id="sector" name="sector" required>
+                  <option value="">Selecciona un sector</option>
+                  <option value="residencial">Residencial</option>
+                  <option value="comercial">Comercial</option>
+                  <option value="industrial">Industrial</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Cuéntanos sobre tu proyecto</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="Describe tu proyecto, consumo promedio mensual, ubicación, etc."></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="rpu">Número de Servicio (RPU)</label>
+                <input type="text" id="rpu" name="rpu" required placeholder="Ej: 123456789012">
+                <p class="field-hint">Aparece en tu recibo de CFE</p>
+              </div>
+              <div class="form-group">
+                <label for="account-name">Nombre en Recibo CFE</label>
+                <input type="text" id="account-name" name="account-name" required
+                  placeholder="Ej: PÉREZ GARCÍA JUAN CARLOS">
+                <p class="field-hint">Tal como aparece en tu recibo</p>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg">Solicitar cotización</button>
+              <a href="contacto.html" class="btn btn-ghost">Ver más formas de contacto</a>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+              </svg>
+              <div>
+                <strong>Ubicación</strong>
+                <p>Calle Piramides del Sol #98, Zapopan, Jalisco</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <div>
+                <strong>Teléfono</strong>
+                <p>+52 333 201 5936</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="m2 7 10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <div>
+                <strong>Email</strong>
+                <p>direccion@energien.com.mx</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-whatsapp" href="https://wa.me/523332015936" target="_blank" rel="noopener"
+    aria-label="Abrir WhatsApp de Energien">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+      <path fill="currentColor"
+        d="M12.04 2C6.56 2 2.1 6.37 2.1 11.74c0 1.89.53 3.68 1.54 5.26L2 22l5.18-1.35a10.2 10.2 0 0 0 4.86 1.23c5.48 0 9.94-4.38 9.94-9.75C21.98 6.37 17.52 2 12.04 2Zm0 17.54c-1.52 0-3.01-.41-4.31-1.2l-.31-.18-3.07.8.82-2.97-.2-.31a8.02 8.02 0 0 1-1.23-4.65c0-4.36 3.59-7.9 8.3-7.9 4.7 0 8.28 3.55 8.28 7.9 0 4.35-3.58 7.91-8.28 7.91Zm4.55-6.03c-.25-.12-1.46-.72-1.69-.8-.23-.09-.4-.12-.56.12-.17.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.11-1.04-.4-1.98-1.25-.73-.65-1.22-1.45-1.37-1.7-.14-.24-.01-.37.11-.49.11-.11.25-.29.37-.43.12-.14.17-.24.25-.4.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.77-1.84-.2-.48-.4-.42-.56-.43l-.48-.01c-.17 0-.43.06-.66.3-.23.24-.87.85-.87 2.08 0 1.22.9 2.4 1.03 2.57.12.16 1.78 2.73 4.32 3.72.6.24 1.07.39 1.44.5.6.19 1.14.16 1.57.1.48-.08 1.46-.6 1.67-1.19.2-.59.2-1.1.14-1.19-.06-.09-.23-.14-.48-.26Z" />
+    </svg>
+  </a>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-brand">
+            <img src="logo.svg" alt="Energien" class="footer-logo">
+            <span class="footer-brand-name">Energien</span>
+          </div>
+          <p class="footer-tagline">Energía solar sostenible para un futuro brillante</p>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-title">Contacto</h4>
+          <p class="footer-text">Zapopan, Jalisco, México</p>
+          <p class="footer-text">+52 333 201 5936</p>
+          <p class="footer-text">direccion@energien.com.mx</p>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-title">Síguenos</h4>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/energien.mx" target="_blank" rel="noopener"
+              aria-label="Facebook">Facebook</a>
+            <a href="https://www.instagram.com/energien.mx" target="_blank" rel="noopener"
+              aria-label="Instagram">Instagram</a>
+            <a href="https://wa.me/523332015936" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Energien. Todos los derechos reservados.</p>
+        <p class="footer-credits">Diseñado y desarrollado por <a href="#" target="_blank" rel="noopener"
+            class="footer-designer">Daniel Vélez S.</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main-min.js"></script>
+</body>
+
+</html>
