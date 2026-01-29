@@ -1024,6 +1024,19 @@ main {
     max-width: 90%;
     text-align: center;
     box-shadow: 0 8px 32px rgba(63, 208, 255, 0.3);
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    animation: fadeInCard 0.7s ease-out 0.9s forwards;
+  }
+  @keyframes fadeInCard {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
   }
   .station__content .station__title {
     font-weight: 800;
@@ -1054,10 +1067,21 @@ main {
     height: 100%;
     z-index: 0;
     transform: none;
-    opacity: 0.75;
+    opacity: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeInImage 0.8s ease-out forwards;
+  }
+  @keyframes fadeInImage {
+    from {
+      opacity: 0;
+      filter: blur(8px);
+    }
+    to {
+      opacity: 0.75;
+      filter: blur(0px);
+    }
   }
   .station__image::before {
     content: "";

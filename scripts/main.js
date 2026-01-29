@@ -161,54 +161,63 @@ function initStoryAnimation() {
     e = select(".story-path"),
     o = select("#story");
   if (!t || !e || !o) return;
-  (gsap.set(t, { autoAlpha: 0, scale: 1 }),
-    gsap.to(t, {
-      scrollTrigger: {
+
+  // Solo aplicar animaciones GSAP en pantallas mayores a 768px
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (!isMobile) {
+    (gsap.set(t, { autoAlpha: 0, scale: 1 }),
+      gsap.to(t, {
+        scrollTrigger: {
+          trigger: o,
+          start: "top 40%",
+          end: "bottom bottom",
+          scrub: 0.3,
+          markers: !1,
+        },
+        motionPath: {
+          path: e,
+          align: e,
+          autoRotate: !1,
+          alignOrigin: [0.5, 0.5],
+        },
+        transformOrigin: "50% 50%",
+        ease: "none",
+      }),
+      gsap.to(t, {
+        rotation: "+=360",
+        duration: 10,
+        ease: "none",
+        repeat: -1,
+        transformOrigin: "50% 50%",
+      }),
+      ScrollTrigger.create({
         trigger: o,
-        start: "top 40%",
-        end: "bottom bottom",
-        scrub: 0.3,
-        markers: !1,
-      },
-      motionPath: {
-        path: e,
-        align: e,
-        autoRotate: !1,
-        alignOrigin: [0.5, 0.5],
-      },
-      transformOrigin: "50% 50%",
-      ease: "none",
-    }),
-    gsap.to(t, {
-      rotation: "+=360",
-      duration: 10,
-      ease: "none",
-      repeat: -1,
-      transformOrigin: "50% 50%",
-    }),
-    ScrollTrigger.create({
-      trigger: o,
-      start: "top 98%",
-      end: "top 30%",
-      onEnter: () => gsap.to(t, { autoAlpha: 1, duration: 0.5 }),
-      onLeaveBack: () => gsap.to(t, { autoAlpha: 0, duration: 0.5 }),
-    }));
+        start: "top 98%",
+        end: "top 30%",
+        onEnter: () => gsap.to(t, { autoAlpha: 1, duration: 0.5 }),
+        onLeaveBack: () => gsap.to(t, { autoAlpha: 0, duration: 0.5 }),
+      }));
+  }
+
   document.querySelectorAll(".station").forEach((t, e) => {
-    gsap.from(t, {
-      scrollTrigger: {
-        trigger: t,
-        start: "top 60%",
-        end: "top 20%",
-        scrub: !1,
-        markers: !1,
-      },
-      opacity: 0,
-      y: 30,
-      duration: 0.6,
-      ease: "power3.out",
-    });
+    if (!isMobile) {
+      gsap.from(t, {
+        scrollTrigger: {
+          trigger: t,
+          start: "top 60%",
+          end: "top 20%",
+          scrub: !1,
+          markers: !1,
+        },
+        opacity: 0,
+        y: 30,
+        duration: 0.6,
+        ease: "power3.out",
+      });
+    }
     const o = t.querySelector(".station__title");
-    o &&
+    if (o && !isMobile) {
       gsap.from(o, {
         scrollTrigger: {
           trigger: t,
@@ -222,8 +231,9 @@ function initStoryAnimation() {
         duration: 0.8,
         ease: "power2.out",
       });
+    }
     const r = t.querySelectorAll(".station__features li");
-    r.length &&
+    if (r.length && !isMobile) {
       gsap.from(r, {
         scrollTrigger: {
           trigger: t,
@@ -237,6 +247,7 @@ function initStoryAnimation() {
         duration: 0.6,
         ease: "back.out(1.5)",
       });
+    }
   });
   document.querySelectorAll(".station__image").forEach((t) => {
     ScrollTrigger.create({
