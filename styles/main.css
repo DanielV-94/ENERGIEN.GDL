@@ -1026,7 +1026,9 @@ main {
     box-shadow: 0 8px 32px rgba(63, 208, 255, 0.3);
     opacity: 0;
     transform: translateY(30px) scale(0.95);
-    animation: fadeInCard 0.7s ease-out 0.9s forwards;
+  }
+  .station.in-view .station__content {
+    animation: fadeInCard 0.8s ease-out 1.5s forwards;
   }
   @keyframes fadeInCard {
     from {
@@ -1071,15 +1073,17 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadeInImage 0.8s ease-out forwards;
   }
-  @keyframes fadeInImage {
+  .station__image.in-view {
+    animation: fadeInImageFull 0.8s ease-out forwards;
+  }
+  @keyframes fadeInImageFull {
     from {
       opacity: 0;
       filter: blur(8px);
     }
     to {
-      opacity: 0.75;
+      opacity: 1;
       filter: blur(0px);
     }
   }
@@ -1097,6 +1101,11 @@ main {
     );
     z-index: 1;
     pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 1.5s;
+  }
+  .station.in-view .station__image::before {
+    opacity: 1;
   }
   .station__image img {
     width: 100%;
@@ -1104,7 +1113,7 @@ main {
     object-fit: cover;
     border-radius: 0;
     border: none;
-    filter: blur(2px) brightness(0.9);
+    filter: blur(0px) brightness(1);
     aspect-ratio: auto;
     mask-image: radial-gradient(
       ellipse at center,
@@ -1122,6 +1131,13 @@ main {
       rgba(0, 0, 0, 0.2) 90%,
       rgba(0, 0, 0, 0) 100%
     );
+    transition:
+      filter 0.8s ease-out 1.5s,
+      opacity 0.8s ease-out 1.5s;
+  }
+  .station.in-view .station__image img {
+    filter: blur(2px) brightness(0.9);
+    opacity: 0.75;
   }
   .station__image:hover {
     transform: none;

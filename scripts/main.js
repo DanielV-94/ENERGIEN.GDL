@@ -249,6 +249,17 @@ function initStoryAnimation() {
       });
     }
   });
+  document.querySelectorAll(".station").forEach((station) => {
+    ScrollTrigger.create({
+      trigger: station,
+      start: "top 75%",
+      end: "bottom 25%",
+      onEnter: () => station.classList.add("in-view"),
+      onLeave: () => station.classList.remove("in-view"),
+      onEnterBack: () => station.classList.add("in-view"),
+      onLeaveBack: () => station.classList.remove("in-view"),
+    });
+  });
   document.querySelectorAll(".station__image").forEach((t) => {
     ScrollTrigger.create({
       trigger: t,
