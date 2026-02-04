@@ -267,8 +267,8 @@
   color: #e8f6ff;
   margin: 0 0 4px;
   line-height: 1.4;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 0 rgba(96, 95, 95, 0.86);
+  -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.89);
   paint-order: stroke fill;
 }
 .case-card__location {
