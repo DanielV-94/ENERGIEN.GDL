@@ -41,20 +41,21 @@
 }
 .image-modal__content {
   position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 95vw;
+  max-height: 95vh;
   animation: zoomIn 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .image-modal__content img {
-  max-width: 100%;
-  max-height: 90vh;
+  max-width: 95vw;
+  max-height: 95vh;
   width: auto;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
+  display: block;
 }
 .image-modal__close {
   position: absolute;
