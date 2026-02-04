@@ -266,8 +266,10 @@
   font-family: "Boldonse", serif;
   color: #e8f6ff;
   margin: 0 0 4px;
-  line-height: 1.2;
+  line-height: 1.4;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+  paint-order: stroke fill;
 }
 .case-card__location {
   font-size: 15px;
