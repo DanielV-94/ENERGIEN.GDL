@@ -288,22 +288,22 @@ body {
 .word-1 {
   top: 5%;
   left: 5%;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 .word-2 {
   top: 35%;
   right: 18%;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 .word-3 {
   bottom: 35%;
   left: 9%;
-  font-size: 1em;
+  font-size: 0.75em;
 }
 .word-4 {
   bottom: 8%;
   right: 5%;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 .section-subtitle {
   display: none;
@@ -335,8 +335,8 @@ body {
 }
 .floating-social {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,8 +424,8 @@ body {
   transform: scale(1.1);
 }
 .social-link svg {
-  width: 72px;
-  height: 72px;
+  width: 90px;
+  height: 90px;
   color: rgba(63, 208, 255, 0.7);
   transition: all 0.3s ease;
   filter: drop-shadow(0 8px 20px rgba(63, 208, 255, 0.3));
@@ -497,13 +497,43 @@ body {
     height: 350px;
   }
   .floating-social {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
   .floating-social.facebook,
   .floating-social.instagram,
   .floating-social.whatsapp {
     animation-duration: 15s;
+  }
+  @keyframes orbitFacebook {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(200px)
+        rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(200px)
+        rotate(-360deg);
+    }
+  }
+  @keyframes orbitInstagram {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(200px)
+        rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(200px)
+        rotate(-360deg);
+    }
+  }
+  @keyframes orbitWhatsapp {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(200px)
+        rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(200px)
+        rotate(-360deg);
+    }
   }
   .social-links {
     flex-direction: column;
@@ -514,8 +544,8 @@ body {
     max-width: 300px;
   }
   .social-link svg {
-    width: 56px;
-    height: 56px;
+    width: 75px;
+    height: 75px;
   }
 }
 
@@ -584,6 +614,36 @@ body {
   .floating-social {
     width: 70px;
     height: 70px;
+  }
+  @keyframes orbitFacebook {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(150px)
+        rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(150px)
+        rotate(-360deg);
+    }
+  }
+  @keyframes orbitInstagram {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(150px)
+        rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(150px)
+        rotate(-360deg);
+    }
+  }
+  @keyframes orbitWhatsapp {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(150px)
+        rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(150px)
+        rotate(-360deg);
+    }
   }
   .contact-cta {
     padding: 60px 24px;
