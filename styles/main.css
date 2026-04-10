@@ -1073,19 +1073,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.8s ease-out;
   }
-  .station__image.in-view {
-    animation: fadeInImageFull 0.8s ease-out forwards;
-  }
-  @keyframes fadeInImageFull {
-    from {
-      opacity: 0;
-      filter: blur(8px);
-    }
-    to {
-      opacity: 1;
-      filter: blur(0px);
-    }
+  .station.in-view .station__image {
+    opacity: 1;
   }
   .station__image::before {
     content: "";

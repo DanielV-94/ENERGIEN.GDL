@@ -260,17 +260,6 @@ function initStoryAnimation() {
       onLeaveBack: () => station.classList.remove("in-view"),
     });
   });
-  document.querySelectorAll(".station__image").forEach((t) => {
-    ScrollTrigger.create({
-      trigger: t,
-      start: "top 75%",
-      end: "bottom 25%",
-      onEnter: () => t.classList.add("in-view"),
-      onLeave: () => t.classList.remove("in-view"),
-      onEnterBack: () => t.classList.add("in-view"),
-      onLeaveBack: () => t.classList.remove("in-view"),
-    });
-  });
 }
 
 // Scroll to Top Button
